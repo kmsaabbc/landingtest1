@@ -21,3 +21,15 @@ function onContact(){
 function onSendEmain(){
 
 }
+
+let imageIndex = 0;
+const imgList = ["/img/mainimg-01.png","/img/mainimg-02.png","/img/mainimg-03.png"]
+function changeMainImage(){
+    const mainImage = document.querySelector("#main-image");
+    mainImage.src = imgList[imageIndex];
+    imageIndex++;
+    if(imageIndex >= imgList.length)
+        imageIndex=0;
+}
+
+setInterval(changeMainImage,5000);
