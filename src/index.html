@@ -21,18 +21,19 @@
     </style>
   </head>
   <body>
+    <script src="app.js"></script>
     <nav class="bg-green-600 w-screen h-24 sticky top-0 flex justify-center items-center">
       <div class="w-3/4 flex items-center justify-between">
-        <div class= "text-4xl text-white ">매매일지</div>
+        <div class= "text-4xl text-white " onclick="onHome()">매매일지</div>
         <div class= "text-2xl text-white flex gap-3 items-center">
-          <div>자동기록</div>
-          <div>디바이스연동</div>
-          <div>원칙리포트</div>
-          <div class="border-solid border-white border-2 rounded-md">Contact</div>
+          <div onclick="onAutoRecord()">자동기록</div>
+          <div onclick="onMultiPlatform()">디바이스연동</div>
+          <div onclick="onReport()">원칙리포트</div>
+          <div onclick="onContact()" class="border-solid border-white border-2 rounded-md">Contact</div>
         </div>
       </div>  
     </nav>
-    <div class="w-screen h-screen bg-green-600 flex justify-center">
+    <div id="home" class="w-screen h-screen bg-green-600 flex justify-center">
         <div class="w-1/3 h-screen bg-green-600 flex justify-center items-center ">        
             <div class="text-white">
               <div class="text-3xl">wirte & report </div>
@@ -54,28 +55,28 @@
               <div>
                 <img src="dollar (1).png" width="100%">
                 <div class="pt-12 text-5xl">자동기록</div>
-                <div class="desc text-xl text-gray-400">계좌연동을 통해 주식 거래가<br> 자동으로 기록돼요</div>
+                <div class="desc text-lg text-gray-400">계좌연동을 통해 주식 거래가<br> 자동으로 기록돼요</div>
               </div>
             </div>
             <div class="h-full w-3/12 bg-white flex items-center justify-center">
               <div>
                 <img src="responsive-design (1).png" width="100%">
                 <div class="pt-12 text-5xl">디바이스연동</div>
-                <div class="desc text-xl text-gray-400">태블릿, 노트북, 휴대폰<br>어디서든 접근 가능해요</div>
+                <div class="desc text-lg text-gray-400">태블릿, 노트북, 휴대폰<br>어디서든 접근 가능해요</div>
               </div>
             </div>
             <div class="h-full w-3/12 bg-white flex items-center">
               <div>
                 <img src="bars (1).png" width="100%">
                 <div class="pt-12 text-5xl">원칙리포트</div>
-                <div class="desc text-xl text-gray-400">나의 원칙에 맞는<br>투자를 하고 있는지 알 수 있어요</div>
+                <div class="desc text-lg text-gray-400">나의 원칙에 맞는<br>투자를 하고 있는지 알 수 있어요</div>
               </div>
             </div>
           </div> 
         </div>
     </div>
-    <div class="w-screen h-screen bg-white flex justify-center">
-      <div class="w-1/3 h-screen bg-white flex justify-center items-center ">        
+    <div id="auto-record" class="w-screen h-screen bg-white flex justify-center">
+      <div  class="w-1/3 h-screen bg-white flex justify-center items-center ">        
           <div>
             <div class="text-xl text-green-600">주식 거래, 하나하나 기록하기 힘드시죠? </div>
             <div class="text-6xl my-4">간편한 자동 기록</div>
@@ -86,7 +87,7 @@
         <img src ="mobile-banking (1).png" >
       </div>
     </div>
-    <div class="w-screen h-screen bg-white flex justify-center">
+    <div id="multi-platform" class="w-screen h-screen bg-white flex justify-center">
       <div class="w-1/3 h-screen bg-white flex justify-center items-center ">        
           <div>
             <div class="text-xl text-green-600">어디서나 작성&열람하고 싶으세요? </div>
@@ -98,7 +99,7 @@
         <img src ="mobile-banking (1).png" >
       </div>
     </div>
-    <div class="w-screen h-screen bg-white flex justify-center">
+    <div id="report" class="w-screen h-screen bg-white flex justify-center">
       <div class="w-1/3 h-screen bg-white flex justify-center items-center ">        
           <div>
             <div class="text-xl text-green-600">똑같은 실수를 반복하지마세요!</div>
@@ -110,7 +111,7 @@
         <img src ="mobile-banking (1).png" >
       </div>
     </div>
-    <div class="w-screen h-screen bg-white flex justify-center">
+    <div id="contact" class="w-screen h-screen bg-white flex justify-center">
       <div class="w-2/3 h-screen bg-white flex items-center justify-center">        
         <div>
           <div class="text-8xl text-green-600 pb-10 flex items-center justify-center">매매일지를 먼저 만나보세요 </div>
