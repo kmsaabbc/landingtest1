@@ -1,7 +1,7 @@
 {
   "name": "html-tailwind-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "This start was build for people not needing any framework.\r It's sometimes enough to just have a plain HTML file, but leverage the power of Tailwind CSS.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,5 +15,13 @@
     "autoprefixer": "^10.2.4",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmsaabbc/landingtest1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kmsaabbc/landingtest1/issues"
+  },
+  "homepage": "https://github.com/kmsaabbc/landingtest1#readme"
 }
